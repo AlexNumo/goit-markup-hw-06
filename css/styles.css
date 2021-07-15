@@ -624,6 +624,8 @@ ol {
 
 /*=============END FOOTER==========================*/
 
+
+/*=============BACKDROP============================*/
 @keyframes animation-backdrop {
   0% {
     transform: scale(0.25);
@@ -667,7 +669,7 @@ ol {
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   animation-name: animation-backdrop;
-  animation-duration: 3000ms;
+  animation-duration: 300ms;
 }
 
 .close-button {
@@ -684,11 +686,139 @@ ol {
   height: 30px;
 }
 
+.close-button:hover{
+  fill: var(--main-color-hover-focus);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
+.position-form{
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  margin: 0;
+  width: 528px;
+  height: 581px;
+  padding-bottom: 40px;
+}
+
+.data-form{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.modal-form-position{
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form-position-name{
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  cursor: pointer !important;
+}
+
+.modal-form-position-name:hover .modal-form-icon{
+  fill: var(--main-color-hover-focus);
+}
+
+.modal-form-position-name:hover{
+  border: 1px solid var(--main-color-hover-focus);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-input-form{
+  width: 448px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.modal-form-icon{
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  fill: var(--main-color);
+}
+
+.modal-textarea-form{
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.modal-form-checkbox-label{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.modal-form-checkbox{
+  margin-top: 20px;
+}
+
+.modal-form-button{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 124px;
+}
+
+.chekbox-hidden{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+/*=============END BACKDROP============================*/
 
 /*=============PORTFOLIO==============================================================================================================================*/
 

@@ -1,5 +1,4 @@
-# goit-markup-hw-03
-  
+
     width-ширина
     height-высота
     left-слева
