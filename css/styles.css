@@ -538,6 +538,7 @@ ol {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-top: 20px;
+  width: 231px;
 }
 
 .address-mail {
@@ -591,7 +592,7 @@ ol {
 
 .sign-logo-position {
   display: flex;
-  margin-left: 85px;
+  margin-left: 70px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -621,6 +622,73 @@ ol {
 .sign-logo-background:focus {
   background-color: var(--main-color-hover-focus);
 }
+
+.subscribe-position{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 154px;
+}
+
+.footer-subscribe{
+  margin-left: 93px;
+  margin-top: 20px;
+}
+
+.footer-subscribe-input{
+  background-color: #2f303a;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+}
+
+.footer-subscribe-button{
+  position: relative;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.footer-subscribe-icon{
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
 
 /*=============END FOOTER==========================*/
 
@@ -686,7 +754,8 @@ ol {
   height: 30px;
 }
 
-.close-button:hover{
+.close-button:hover,
+.close-button:focus{
   fill: var(--main-color-hover-focus);
 }
 
@@ -734,17 +803,20 @@ ol {
   position: relative;
   display: block;
   margin-top: 4px;
-  cursor: pointer !important;
 }
 
-.modal-form-position-name:hover .modal-form-icon{
+.modal-form-position-name:hover .modal-form-icon,
+.modal-form-position-name:focus .modal-form-icon{
   fill: var(--main-color-hover-focus);
+  cursor: pointer;
+  transition-timing-function: (0.4, 0, 0.2, 1);
 }
 
-.modal-form-position-name:hover{
-  border: 1px solid var(--main-color-hover-focus);
-  box-sizing: border-box;
-  border-radius: 4px;
+.modal-input-form:hover,
+.modal-input-form:focus{
+  border-color: var(--main-color-hover-focus);
+  cursor: pointer;
+  transition-timing-function: (0.4, 0, 0.2, 1);
 }
 
 .modal-input-form{
@@ -755,6 +827,8 @@ ol {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .modal-form-icon{
@@ -773,6 +847,13 @@ ol {
   border-radius: 4px;
   padding-left: 16px;
   padding-top: 12px;
+  cursor: pointer;
+}
+
+.modal-textarea-form:hover,
+.modal-textarea-form:focus{
+  border-color: var(--main-color-hover-focus);
+  transition-duration: 250ms;
 }
 
 .modal-form-checkbox-label{
@@ -783,6 +864,11 @@ ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+  background-color: var(--main-color-hover-focus);
+  box-shadow: inset 0 0 0 4px #ffffff;
 }
 
 .modal-form-checkbox{
@@ -804,11 +890,21 @@ ol {
   height: 50px;
   margin-top: 30px;
   margin-left: 124px;
+  cursor: pointer;
+  transition-duration: 250ms;
 }
 
-.chekbox-hidden{
+.modal-form-button:hover,
+.modal-form-button:focus{
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
