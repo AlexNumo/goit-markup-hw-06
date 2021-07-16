@@ -42,6 +42,10 @@ ol {
   padding: 0 15px;
 }
 
+textarea{
+  resize:none;
+}
+
 /*=============HEADER==========================*/
 
 .navigation-bar {
@@ -238,7 +242,7 @@ ol {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 10px 32px 10px 32px;
+  border:  0px;
   padding: 10px 32px 10px 32px;
   margin: auto;
 }
@@ -667,6 +671,7 @@ ol {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0px;
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -694,6 +699,7 @@ ol {
 
 
 /*=============BACKDROP============================*/
+
 @keyframes animation-backdrop {
   0% {
     transform: scale(0.25);
@@ -752,6 +758,9 @@ ol {
   padding: 0px;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .close-button:hover,
@@ -770,8 +779,6 @@ ol {
   padding-top: 40px;
   padding-right: 40px;
   margin: 0;
-  width: 528px;
-  height: 581px;
   padding-bottom: 40px;
 }
 
@@ -886,6 +893,7 @@ ol {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0px;
   width: 200px;
   height: 50px;
   margin-top: 30px;
@@ -902,15 +910,22 @@ ol {
   transition-timing-function: (0.4, 0, 0.2, 1);
 }
 
+.modal-form-label-link{
+  text-decoration: underline;
+  color: var(--main-color-hover-focus)
+}
+
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  display: none;
+}
+
+.modal-button-position{
+  display: block;
+  margin-top: 20px;
+}
+
+.modal-form-icon-check{
+  
 }
 
 

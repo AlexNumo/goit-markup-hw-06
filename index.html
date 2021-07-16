@@ -369,10 +369,15 @@
                     Комментарий
                     <textarea name="user-message" class="modal-textarea-form" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
-                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp; 
-                    <a href="#" class="modal-form-label-link">Условия договора</a></label>
-                <button type="submit" class="modal-form-button">Отправить</button>
+                <label class="modal-button-position">
+                    <svg class="modal-form-icon-check" width=16px height=15px>
+                        <use href="./img/icons.svg#check-icon"></use>
+                    </svg>
+                    <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                    <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp; 
+                        <a href="#" class="modal-form-label-link">Условия договора</a></label>
+                    <button type="submit" class="modal-form-button">Отправить</button>
+                </label>
             </form>
         </div>
     </div>

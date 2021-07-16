@@ -189,6 +189,7 @@
             <div class="position-address-link">
                 <a class="footer-link" href="index.html"><span class="logo-three-letters">Web</span>Studio</a>
                 <h2 class="link-sign">присоединяйтесь</h2>
+                <p class="subscribe-position">Подпишитесь на рассылку</p>
             </div>
             <div class="footer-position-link-sign">
                 <address class="address-position">
@@ -222,9 +223,24 @@
                         </svg>
                     </a>
                 </div>
+                <label class="footer-subscribe">
+                    <span class="footer-subscribe-input-position">
+                        <input type="text" class="footer-subscribe-input" name="mail-client-subscribe" minlength="5"
+                            pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
+                            title="Почта должна содержать символы латиницы с использованием знака @" required>
+                    </span>
+                </label>
+                <button type="submit" class="footer-subscribe-button">Подписаться
+                    <svg class="footer-subscribe-icon" width=24px height=24px>
+                        <use href="./img/sprite.svg#send"></use>
+                    </svg>
+                </button>
+                <!--<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                        <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
+                                class="modal-form-label-link">Условия договора</a></label>
+                        <button type="submit" class="modal-form-button">Отправить</button>-->
             </div>
         </div>
     </footer>
-
 </body>
 </html>
